@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+    <script src="store.js" async></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   </head>
+    <body>
+<!-- nav bar-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header ">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+            </button>
+            <a href="main.html" class="navbar-brand navbar-brand-large">DUKE</span></a>
+        </div>
+
+    <div id="my" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav pull-right">
+            <li><a href="main.html"><i class="glyphicon glyphicon-home">&nbsp;</i>HOME</a></li>
+            <li onclick="under()"><a href=""><i class="glyphicon glyphicon-user">&nbsp;</i>ABOUT</a></li>
+            <li onclick="under()"><a href=""><i class="glyphicon glyphicon-log-in">&nbsp;</i>LOGIN</a></li>
+            <li onclick="under()"><a href=""><i class="glyphicon glyphicon-map-marker">&nbsp;</i>CONTACT</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ads slidshow-->
+    <div id="ad">
+    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li  data-target="#mycarousel" data-slide-to="0" class="active" ></li> 
+            <li  data-target="#mycarousel" data-slide-to="1" ></li>
+            <li  data-target="#mycarousel" data-slide-to="2" ></li> 
+        </ol>
+        <div class="carousel-inner" role="listbox">
+        <div class="item active"><img src="image/b1.jpg" alt="ad" height="400px"></div>
+        <div class="item"><center><img src="image/b2.jpg" alt="ad"  height="400px"></center></div>
+        <div class="item"><center><img src="image/b3.jpg" alt="pk" height="400px"></center></div>
+        </div>
+        </div>
+            <h3 class="text-center text-danger"><b>ON THE WAY</b></h3><br>          
+            <div class="col-md-3">
+            <span onclick="offer()"><a href=""><img src="image/a1.jpg" width="100%"></a></span>
+            </div>
+            <div class="col-md-3">
+            <span onclick="offer()"><a href=""><img src="image/a2.jpg" width="100%"></a></span>
+            </div>
+            <div class="col-md-3">
+            <span onclick="offer()"><a href=""><img src="image/a3.jpg" width="100%"></a></span>
+            </div>  
+            <div class="col-md-3">
+            <span onclick="offer()"><a href=""><img src="image/a4.jpg" width="100%"></a></span>
+            </div>  
+            </div>
+        </div>
+ <!-- Product1-->       
+        <section class="container content-section">
+            <h2 class="section-header text-center text-danger">MOBILES</h2>
+            <div class="shop-items">
+                <div class="col-md-3">
+                <div class="shop-item">
+                  <span class="shop-item-title">Honor</span>
+                   <a href="Product1.html"><img class="shop-item-image" src="image/m1.jpg"><br><br></a>
+                     <p class="text-danger">Honor View20(Blue, 6GB RAM,128GB Storage)</p>
+                    <div class="shop-item-details">
+                    <span class="shop-item-price">18000</span>
+                        <button class="btn btn-warning shop-item-button" type="button">ADD TO CART</button>
+					</div>
+                </div>
+            </div>
+
+                <div class="col-md-3">
+                <div class="shop-item">
+                    <span class="shop-item-title">RedMi</span>
+                  <a href="Product2.html"><img class="shop-item-image" src="image/m2.jpg"><br><br></a>
+                   <p class="text-danger">Redme 6 Pro(Blue,6GB RAM, 128GB Storage)</p>
+                    <div class="shop-item-details">
+					   <span class="shop-item-price">15000</span>
+                        <button class="btn btn-warning shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+                 <div class="col-md-3">
+                <div class="shop-item">    
+                <span class="shop-item-title">OnePlus</span>
+                  <a href="Product3.html"><img class="shop-item-image" src="image/m3.jpg"><br><br></a>
+                  <p class="text-danger">OnePlus 7 Pro(Grey,8GB RAM,256GB Storage)</p>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">52999</span>
+                        <button class="btn btn-warning shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-md-3">
+                <div class="shop-item">
+        
+                    <span class="shop-item-title">oppo R17</span>
+                    <a href="Product4.html"><img class="shop-item-image" src="image/m4.jpg"><br><br></a>
+                    <p class="text-danger">Oppo R17 (Black, 4GB RAM, 64GB Storage)</p>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">29999</span>
+                        <button class="btn btn-warning disabled" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+			<hr/>
+        </section>
+<!-- Product2-->
+<section class="container content-section">
+            <h2 class="section-header text-danger text-center">BRAND ARRIVES</h2>
+            <div class="shop-items">
+                <div class="col-md-3">
+                <div class="shop-item">
+                    <span class="shop-item-title">ARROW</span>
+                        <a href="Product5.html"><img class="shop-item-image" src="image/d1.jpeg"><br><br></a>
+                        <p class="text-danger">ARROW BLUE Solid Men Polo Shirt</p>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">8000</span>
+                        <button class="btn btn-warning shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+                     <div class="col-md-3">
+                <div class="shop-item">
+                
+                    <span class="shop-item-title"> ADIDAS</span>
+                  <a href="Product6.html"><img class="shop-item-image" src="image/d2.jpeg"><br><br></a>
+                  <p class="text-danger">ICC Cricket World Cup Sports Men Polo Neck Blue</p>
+                    <div class="shop-item-details">
+                    <span class="shop-item-price">1000</span>
+                        <button class="btn btn-warning disabled"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+                 <div class="col-md-3">
+                <div class="shop-item">
+                     
+                    <span class="shop-item-title">U.S. Polo Assn</span>
+                    <a href="product7.html"><img class="shop-item-image" src="image/d3.jpeg"><br><br></a>
+                    <p class="text-danger">U.S. Polo Assn(Slim Fit Men Brown Trousers)</p>
+                    <div class="shop-item-details">
+                    <span class="shop-item-price">2999</span>
+                    <button class="btn btn-warning shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-3">
+                <div class="shop-item">
+        
+                    <span class="shop-item-title">U.S. Polo Assn</span>
+                  <a href="product8.html"><img class="shop-item-image" src="image/d4.jpeg"><br><br></a>
+                  <p class="text-danger">U.S. Polo Assn(Slim Fit Men Blue Trousers)</p>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">9999</span>
+                        <button class="btn btn-warning disabled" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <hr/>
+        </section>
+
+			<section class="container content-section">
+            <h2 class="section-header text-center">BAG</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">PRODUCT</span>
+                <span class="cart-price cart-header cart-column">COST</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">0</span>
+            </div>
+            <a href="payment.html"><button class="btn btn-info btn-purchase" type="button">BUY NOW</button></a>
+        </section>
+    </body>
+    
+</html>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        

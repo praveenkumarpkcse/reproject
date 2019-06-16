@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	  <script src="store.js" async></script>
+	<title>DUKE</title>
+	
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!-- nav bar-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-header ">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+			</button>
+			<a href="main.html"class="navbar-brand navbar-brand-large">DUKE</span></a>
+		</div>
+
+	<div id="my" class="collapse navbar-collapse">
+		<ul class="nav navbar-nav pull-right">
+			<li><a href="main.html"><i class="glyphicon glyphicon-home">&nbsp;</i>HOME</a></li>
+    		<li onclick="under()"><a href=""><i class="glyphicon glyphicon-user">&nbsp;</i>ABOUT</a></li>
+			<li onclick="under()"><a href=""><i class="glyphicon glyphicon-log-in">&nbsp;</i>LOGIN</a></li>
+			<li onclick="under()"><a href=""><i class="glyphicon glyphicon-map-marker">&nbsp;</i>CONTACT</a></li>
+		</ul>
+	</div>
+</nav>
+<div class="ad1">
+<div class="col-md-6">
+<form>
+		<h2 class="text-center">USER INFO</h2>
+
+		<div class="form-group"><label>Name</label><input type="text" class="form-control" id="n1" required></div>
+
+		<div class="form-group"><label>E-mail</label><input type="text" class="form-control" id="m" required></div>
+	
+		<div class="form-group"><label>Ph-No</label><input type="text" class="form-control" id="p" required></div>
+
+		<div class="form-group"><label>ADDRESS</label><input type="text" class="form-control" id="ad" required></div>
+		
+	    <button  class="btn btn-success" onclick ="saveme()">SAVE</button>	
+</form>
+</div>
+<div class="col-md-6">
+<form>    
+		<h2 class="text-center">PAYMENT</h2>
+
+		<div class="form-group"><label>Name</label><input type="text" class="form-control" required></div>
+
+		<div class="form-group"><label>Card-No</label><input type="text" class="form-control"required></div>
+	
+		<div class="form-group"><label>Exp-Date</label><input type="text" class="form-control"required></div>
+		
+		<div class="form-group"><label>CVV</label><input type="text" class="form-control"required></div>
+
+	    <button  class="btn btn-success" onclick ="order()">PAYMENT</button><br><br>
+	    
+</form>
+</div>
+</div>
+</body>
+</html>
